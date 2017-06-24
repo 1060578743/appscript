@@ -3,6 +3,7 @@ package com.lym.xposed;
 import de.robv.android.xposed.XC_MethodHook;
 
 public abstract class MH extends XC_MethodHook {
+	
 
 	@Override
 	protected void beforeHookedMethod(MethodHookParam param) throws Throwable {

@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <!-- 解锁的权限 -->
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
     </uses-permission>
@@ -37,6 +38,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="com.lym.xposed.service.ScriptService"
+            android:exported="true" >
+        </service>
 
         <receiver android:name="com.lym.xposed.receiver.RebootReceiver" >
             <intent-filter>
